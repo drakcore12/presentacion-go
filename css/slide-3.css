@@ -1,0 +1,97 @@
+  /* Slide 3 específico */
+  #slide-3 {
+    background: linear-gradient(90deg, #010f19 0%, #002e13 100%);
+    color: #ffffff;
+    position: absolute; /* para el logo absoluto */
+  }
+  
+  /* Contenido en columna y centrado */
+  #slide-3 .slide-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Título */
+  #slide-3 .left .name {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    margin: 0;
+    color: #ffffff;
+  }
+  
+  /* Cita */
+  #slide-3 .left .intro-quote {
+    font-style: italic;
+    font-weight: 500;
+    margin: 0;
+    color: #cfdcdd;
+  }
+  
+  /* Grid de tarjetas */
+  #slide-3 .reasons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+  
+  /* Tarjeta individual */
+  #slide-3 .card {
+    background-color: #00bcd4;
+    color: #010f19;
+    border: 3px solid #ffffff;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Título de tarjeta */
+  #slide-3 .card-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+  }
+  
+  /* Texto de tarjeta */
+  #slide-3 .card-text {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+  }
+  
+  /* Iconos y diagramas: aún más grandes */
+  #slide-3 .card-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: center;
+  }
+  #slide-3 .card-icons img {
+    max-width: 120px;
+    max-height: 120px;
+    object-fit: contain;
+  }
+  
+  /* Logo Go en esquina, agrandado */
+  #slide-3 .right {
+    position: absolute;
+    top: 2rem;
+    right: 5rem;
+  }
+  #slide-3 .right .logo {
+    width: 150px;
+    height: auto;
+  }
+  

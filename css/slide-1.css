@@ -1,0 +1,117 @@
+/* SLIDE 1 BASE */
+#slide-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5rem;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 0;
+  }
+  
+  /* SLIDE 1 ACTIVO */
+  #slide-1.active {
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 1;
+  }
+  
+  /* CONTENIDO SLIDE 1 */
+  #slide-1 .slide-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    gap: 4rem;
+  }
+  
+  /* SECCIÓN IZQUIERDA SLIDE 1 */
+  #slide-1 .left {
+    max-width: 45%;
+    margin-top: 6rem;
+  }
+  
+  #slide-1 .left .logo {
+    width: 320px;
+    display: block;
+  }
+  
+  #slide-1 .left .name {
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin: 0.5rem 0;
+  }
+  
+  #slide-1 .left hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 1rem 0;
+  }
+  
+  #slide-1 .left .description {
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  #slide-1 .intro-quote {
+    font-style: italic;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+  
+  /* SECCIÓN DERECHA SLIDE 1 */
+  #slide-1 .right {
+    flex-shrink: 0;
+  }
+  
+  #slide-1 .right .image-container {
+    width: 600px;
+    height: 600px;
+    margin-top: 17rem;
+    margin-right: -200px;
+    border: 10px solid #00b8e6;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  #slide-1 .right .image-container.no-border {
+    border: none;
+    margin-top: 6rem;
+  }
+  
+  #slide-1 .right .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  /* LISTA DE DESCRIPCIÓN SLIDE 1 */
+  #slide-1 .description {
+    list-style: disc inside;
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: 500;
+  }
+  
+  #slide-1 .description ul {
+    list-style: circle inside;
+    margin-left: 1rem;
+  }
+  
+  /* TÍTULO SLIDE 1 */
+  #slide-1 h1.name {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  

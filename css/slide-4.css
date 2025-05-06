@@ -1,0 +1,32 @@
+/* Slide 4 */
+#slide-4 {
+    background: linear-gradient(90deg, #010f19 0%, #002e13 100%);
+    position: absolute; /* para el logo absoluto */
+  }
+  
+  /* Contenedor centrado con margen igual en todos los lados */
+  #slide-4 .slide-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;            /* margen interior igual arriba, abajo, izquierda y derecha */
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* Wrapper de la imagen centrado y con ancho máximo */
+  #slide-4 .image {
+    width: 80%;               /* ocupa el 80% del ancho de la slide */
+    max-width: 1000px;        /* no crece más allá de 1000px */
+    margin: auto;             /* centra horizontalmente */
+  }
+  
+  /* Imagen escalable y centrada dentro de su wrapper */
+  #slide-4 .image img {
+    display: block;
+    width: 100%;              /* llena todo el ancho del wrapper */
+    height: auto;             
+    object-fit: contain;
+  }
+  

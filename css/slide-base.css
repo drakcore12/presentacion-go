@@ -1,0 +1,28 @@
+/* ────────────────────────────────────────────────
+   BASE GLOBAL PARA TODAS LAS SLIDES (layout only)
+   ──────────────────────────────────────────────── */
+   .slide {
+    position: absolute;
+    top:    0;
+    left:   0;
+    width:  100%;
+    height: 100vh;
+    display:         flex;
+    align-items:     center;
+    justify-content: center;
+    padding:         0 5rem;
+    overflow:        hidden;
+    opacity:         0;
+    pointer-events:  none;
+    transition:      opacity 0.5s ease-in-out;
+    z-index:         0;
+  
+    /* ¡Aquí NO pongas fondo ni color! */
+  }
+  
+  .slide.active {
+    opacity:        1;
+    pointer-events: auto;
+    z-index:        1;
+  }
+  

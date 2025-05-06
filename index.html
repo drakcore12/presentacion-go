@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Presentación Go</title>
+
+  <!-- 1) Global: reset y tipografía -->
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/container.css" />
+
+  <!-- 2) UI -->
+  <link rel="stylesheet" href="css/ui.css" />
+
+  <!-- 3) Slides -->
+  <link rel="stylesheet" href="css/slide-base.css" />
+  <link rel="stylesheet" href="css/slide-1.css" />
+  <link rel="stylesheet" href="css/slide-2.css" />
+  <link rel="stylesheet" href="css/slide-3.css" />
+  <link rel="stylesheet" href="css/slide-4.css" />
+  <link rel="stylesheet" href="css/slide-5.css" />
+  <link rel="stylesheet" href="css/slide-6.css" />
+  <link rel="stylesheet" href="css/slide-7.css" />
+  <link rel="stylesheet" href="css/slide-8.css" />
+  <link rel="stylesheet" href="css/slide-9.css" />
+  <link rel="stylesheet" href="css/slide-10.css" />
+  <link rel="stylesheet" href="css/slide-11.css" />
+  <link rel="stylesheet" href="css/slide-12.css" />
+  <link rel="stylesheet" href="css/slide-13.css" />
+  <link rel="stylesheet" href="css/slide-14.css" />
+  <link rel="stylesheet" href="css/slide-15.css" />
+  <link rel="stylesheet" href="css/slide-16.css" />
+  <link rel="stylesheet" href="css/slide-17.css" />
+  <link rel="stylesheet" href="css/slide-18.css" />
+  <link rel="stylesheet" href="css/slide-19.css" />
+  <link rel="stylesheet" href="css/slide-20.css" />
+  <link rel="stylesheet" href="css/slide-21.css" />
+  <link rel="stylesheet" href="css/slide-22.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet" />
+</head>
+<body>
+  <!-- CONTENEDOR DE SLIDES -->
+  <div id="slides">
+
+    <!-- Slide 1 -->
+    <div id="slide-1" class="slide active">
+      <div class="slide-content">
+        <div class="left">
+          <img src="https://go.dev/blog/go-brand/Go-Logo/PNG/Go-Logo_Aqua.png"
+               alt="Go Logo" class="logo" />
+          <h1 class="name">Miguel Angel Noreña Cano</h1>
+          <hr />
+          <p class="description">Institución Universitaria Pascual Bravo.</p>
+        </div>
+        <div class="right">
+          <div class="image-container">
+            <img src="https://img.freepik.com/fotos-premium/programador-trabajando-computadora-habitacion-oscura-programador-codificando-codigo-computador-escritorio_112255-9338.jpg"
+                 alt="Persona tecleando en laptop" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div id="slide-2" class="slide">
+      <div class="slide-content">
+        <div class="left">
+          <h1 class="name">Introducción a Go (Golang)</h1>
+          <p class="intro-quote">
+            “Go nació para enfrentar los desafíos de los sistemas distribuidos modernos.”
+          </p>
+          <ul class="description">
+            <li>Creado por: Google (2009)</li>
+            <li>Concurrencia nativa (goroutines y channels).</li>
+            <li>Sintaxis clara y minimalista.</li>
+            <li>Alta velocidad de ejecución.</li>
+          </ul>
+        </div>
+        <div class="right">
+          <div class="image-container no-border">
+            <img src="pictures/gopet.png" alt="Gopher Golang Slide" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 3: Razones para Aprender Go -->
+    <div id="slide-3" class="slide">
+      <div class="slide-content">
+        <div class="left">
+          <h1 class="name">Razones para Aprender Go</h1>
+          <p class="intro-quote">
+            “Go es la herramienta perfecta para sistemas críticos y de alto rendimiento.”
+          </p>
+        </div>
+        <div class="reasons">
+          <div class="card">
+            <h3 class="card-title">Aumenta tu valor profesional</h3>
+            <p class="card-text">
+              Empresas líderes (Google, Netflix, Uber, Docker, Kubernetes)
+            </p>
+            <div class="card-icons">
+              <img src="pictures/empresas.png" alt="Empresas" />
+            </div>
+          </div>
+          <div class="card">
+            <h3 class="card-title">Mejora la eficiencia</h3>
+            <p class="card-text">
+              Reducir tiempos de desarrollo y costos operativos
+            </p>
+            <div class="card-icons">
+              <img src="pictures/efficiency-icon.png" alt="Eficiencia" />
+            </div>
+          </div>
+          <div class="card">
+            <h3 class="card-title">Concurrencia avanzada</h3>
+            <p class="card-text">
+              Goroutines para manejar tareas simultáneas
+            </p>
+            <div class="card-icons">
+              <img src="pictures/goroutine-diagram.png" alt="Goroutines" />
+            </div>
+          </div>
+          <div class="card">
+            <h3 class="card-title">Estabilidad y rendimiento</h3>
+            <p class="card-text">
+              Binarios compilados, rápidos y confiables
+            </p>
+            <div class="card-icons">
+              <img src="https://cdn-icons-png.flaticon.com/512/4542/4542018.png"
+                   alt="Binarios" />
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <img class="logo"
+               src="https://go.dev/blog/go-brand/Go-Logo/PNG/Go-Logo_Aqua.png"
+               alt="Logo de Go" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div id="slide-4" class="slide">
+      <div class="slide-content">
+        <div class="image">
+          <img src="pictures/goroutine-diagram.png" alt="Goroutines" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 5: Contexto en Colombia y Tendencias Globales -->
+    <div id="slide-5" class="slide">
+      <div class="slide-content">
+        <h1 class="name">
+          Contexto en Colombia y Tendencias Globales (2024–2025)
+        </h1>
+      </div>
+      <div class="right">
+        <img class="logo"
+             src="https://go.dev/blog/go-brand/Go-Logo/PNG/Go-Logo_Aqua.png"
+             alt="Logo de Go" />
+      </div>
+    </div>
+
+    <!-- Slide 6: Contexto en Colombia -->
+    <div id="slide-6" class="slide">
+      <div class="slide-content">
+        <div class="left">
+          <h1 class="title">Contexto en Colombia</h1>
+          <div class="info-box">
+            <ul>
+              <li>📈 Crecimiento notable en la demanda de Go.</li>
+              <li>💰 Salario promedio 2022: 4.º lenguaje mejor pagado (~7,4 M COP/mes).</li>
+              <li>💵 Salario promedio 2023–2024: ~$2.140 USD/mes (~8,5–9 M COP).</li>
+              <li>🌐 Trabajo remoto: permite a desarrolladores colombianos ganar en dólares.</li>
+              <li>📊 Rangos actuales en Colombia:
+                <ul>
+                  <li>Junior: ~$1.155 USD/mes</li>
+                  <li>Senior: hasta ~$6.000 USD/mes</li>
+                </ul>
+              </li>
+              <li>🔺 Crecimiento anual de vacantes Go: ~15 %.</li>
+              <li>💡 Idea central: Go ofrece ingresos muy atractivos y acceso a mercados globales.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="right">
+          <img class="logo"
+               src="https://go.dev/blog/go-brand/Go-Logo/PNG/Go-Logo_Aqua.png"
+               alt="Logo de Go" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 7: Tendencias Globales -->
+    <div id="slide-7" class="slide">
+      <div class="slide-content">
+        <div class="left">
+          <h1 class="title">Tendencias Globales</h1>
+          <div class="info-box">
+            <p>🌐 👩‍💻 Desarrolladores Go (2024):</p>
+            <ul>
+              <li>Inicios: ~4,7–5 millones</li>
+              <li>Finales proyectados: ~5,8 millones</li>
+            </ul>
+            <p>📝 Rankings:</p>
+            <ul>
+              <li>#7 en TIOBE (nov. 2024)</li>
+              <li>Top 10 en GitHub Octoverse y Stack Overflow</li>
+            </ul>
+            <p>⭐ Razones de su popularidad:</p>
+            <ul>
+              <li>Rendimiento cercano a C/C++</li>
+              <li>Sintaxis más simple que Rust o C++</li>
+              <li>Ecosistema fuerte: Docker, Kubernetes, Terraform</li>
+            </ul>
+            <p>✅ <strong>Dato clave:</strong> Go se consolida como lenguaje mainstream para backend e infraestructura.</p>
+          </div>
+        </div>
+        <div class="right">
+          <img class="logo"
+               src="https://go.dev/blog/go-brand/Go-Logo/PNG/Go-Logo_Aqua.png"
+               alt="Logo de Go" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 8: Comparativa de Salarios por Nivel y Región -->
+    <div id="slide-8" class="slide">
+        <div class="slide-content">
+        <h1 class="title">Comparativa de Salarios por Nivel y Región</h1>
+        <div class="chart-container">
+            <canvas id="salaryChart"></canvas>
+        </div>
+        </div>
+        <div class="right">
+        <img
+            class="logo"
+            src="https://go.dev/blog/go-brand/Go-Logo/PNG/Go-Logo_Aqua.png"
+            alt="Logo de Go"
+        />
+        </div>
+    </div>
+    
+    <!-- Chart.js desde CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const ctx = document.getElementById('salaryChart').getContext('2d');
+        new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['Colombia', 'Latinoamérica', 'Estados Unidos', 'Europa Occidental', 'Asia'],
+            datasets: [
+            {
+                label: 'Junior',
+                data: [30000, 24000, 115000, 60000, 22000],
+                backgroundColor: 'rgba(0, 188, 212, 0.8)'
+            },
+            {
+                label: 'Semi-Senior',
+                data: [45000, 32000, 130000, 80000, 50000],
+                backgroundColor: 'rgba(255, 165, 0, 0.8)'
+            },
+            {
+                label: 'Senior',
+                data: [65000, 52000, 200000, 100000, 85000],
+                backgroundColor: 'rgba(0, 255, 0, 0.8)'
+            }
+            ]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+            legend: {
+                position: 'top',
+                labels: { color: '#fff' }
+            },
+            title: {
+                display: false
+            }
+            },
+            scales: {
+            x: {
+                ticks: { color: '#fff' },
+                grid: { display: false }
+            },
+            y: {
+                beginAtZero: true,
+                ticks: {
+                color: '#fff',
+                callback: value => '$' + value.toLocaleString()
+                },
+                grid: { color: 'rgba(255,255,255,0.1)' },
+                title: {
+                display: true,
+                text: 'Salario Anual (USD)',
+                color: '#fff'
+                }
+            }
+            }
+        }
+        });
+    </script>
+  
+    <!-- Slide 9: Características Principales -->
+    <div id="slide-9" class="slide">
+        <div class="slide-content">
+        <div class="left">
+            <h1 class="name">Características Principales de Go</h1>
+            <ul class="description">
+            <li>Sintaxis clara y legible</li>
+            <li>Tipado estático e inferencia</li>
+            <li>Compilación rápida</li>
+            <li>Concurrencia con goroutines y canales</li>
+            <li>Recolector de basura eficiente</li>
+            <li>Librería estándar robusta</li>
+            </ul>
+        </div>
+        <div class="right">
+            <img src="pictures/go-vs-otros.png" alt="Comparación de Go" />
+        </div>
+        </div>
+    </div>
+    
+    <!-- Slide 10: Primeros Pasos y Hola Mundo -->
+    <div id="slide-10" class="slide">
+        <div class="slide-content">
+        <div class="left">
+            <h1 class="name">Primeros pasos con Go</h1>
+            <ul class="description">
+            <li>Descarga desde <a href="https://go.dev">go.dev</a></li>
+            <li>Verifica con <code>go version</code></li>
+            <li>Crea archivo <code>hola.go</code></li>
+            <li>Ejecuta con <code>go run hola.go</code></li>
+            </ul>
+            <pre><code>package main
+    import "fmt"
+    func main() {
+        fmt.Println("Hola, mundo")
+    }</code></pre>
+        </div>
+        <div class="right">
+            <img src="pictures/editor-console.png" alt="Editor y consola" />
+        </div>
+        </div>
+    </div>
+    
+    <!-- Slide 11: Tipos de Datos Primitivos -->
+    <div id="slide-11" class="slide">
+        <div class="slide-content">
+        <div class="left">
+            <h1 class="name">Tipos de Datos Primitivos</h1>
+            <div class="code-output-box">
+            <pre class="code-input"><code>package main
+    import ("fmt")
+    
+    func main() {
+        var a bool = true    // Boolean
+        var b int = 5        // Integer
+        var c float32 = 3.14 // Floating point number
+        var d string = "Hi!" // String
+    
+        fmt.Println("Boolean: ", a)
+        fmt.Println("Integer: ", b)
+        fmt.Println("Float:   ", c)
+        fmt.Println("String:  ", d)
+    }
+    </code></pre>
+    
+            <pre class="code-output"><code>Boolean:  true
+    Integer:  5
+    Float:    3.14
+    String:   Hi!
+    </code></pre>
+            </div>
+        </div>
+    
+        <div class="right">
+            <img src="pictures/types-table.png" alt="Tabla de tipos" class="reduced-centered" />
+        </div>
+        </div>
+    </div>
+  
+    <!-- Slide 12: Variables y Constantes -->
+    <div id="slide-12" class="slide">
+        <div class="slide-content">
+        <div class="left">
+            <h1 class="name">Variables y Constantes</h1>
+    
+            <div class="code-output-box">
+    <pre class="code-input"><code>    package main
+    import "fmt"
+    
+    const PI = 3.14
+    
+    func main() {
+        var edad int = 30
+        nombre := "Miguel"
+    
+        fmt.Println("Edad:", edad)
+        fmt.Println("Nombre:", nombre)
+        fmt.Println("PI:", PI)
+    }</code></pre><pre class="code-output"><code>    Edad: 30
+    Nombre: Miguel
+    PI: 3.14</code></pre>
+            </div>
+        </div>
+        </div>
+    </div>
+  
+  
+    <!-- Slide 13: Funciones en Go -->
+    <div id="slide-13" class="slide">
+        <div class="slide-content">
+        <div class="left">
+            <h1 class="name">Funciones en Go</h1>
+            <p>Ejemplo:</p>
+            <pre><code>func saludar(nombre string) string {
+        return "Hola " + nombre
+    }</code></pre>
+            <p>Admite múltiples retornos y funciones anónimas.</p>
+        </div>
+        <div class="right">
+            <img src="pictures/functions.png" alt="Función en Go" />
+        </div>
+        </div>
+    </div>
+    
+    <!-- Slide 14: Condicionales y Switch -->
+    <div id="slide-14" class="slide">
+        <div class="slide-content">
+        <div class="left">
+            <h1 class="name">Condicionales y Switch</h1>
+            <ul>
+            <li><code>if</code>, <code>else</code>, <code>else if</code></li>
+            <li><code>switch</code> sin <code>break</code></li>
+            <li><code>defer</code>: ejecuta al final de la función</li>
+            </ul>
+            <pre><code>if edad >= 18 {
+        fmt.Println("Mayor de edad")
+    }</code></pre>
+        </div>
+        <div class="right">
+            <img src="pictures/conditionals.png" alt="Condicionales" />
+        </div>
+        </div>
+    </div>
+    
+    <!-- Slide 15: Bucles en Go -->
+    <div id="slide-15" class="slide">
+        <div class="slide-content">
+        <div class="left">
+            <h1 class="name">Bucles en Go</h1>
+            <ul>
+            <li>Solo existe <code>for</code></li>
+            <li>For clásico, tipo while e infinito</li>
+            <li><code>for range</code> para iterar slices y mapas</li>
+            </ul>
+            <pre><code>for i := 0; i < 5; i++ {
+        fmt.Println(i)
+    }</code></pre>
+        </div>
+        <div class="right">
+            <img src="pictures/loops.png" alt="Bucle for" />
+        </div>
+        </div>
+    </div>
+    
+    <!-- Slide 16: Arreglos, Slices y Mapas -->
+    <div id="slide-16" class="slide">
+        <div class="slide-content">
+        <div class="left">
+            <h1 class="name">Arreglos, Slices y Mapas</h1>
+            <ul>
+            <li>Array: <code>[5]int</code> — tamaño fijo</li>
+            <li>Slice: <code>[]int</code> — dinámico</li>
+            <li>Mapa: <code>map[string]int</code> — clave-valor</li>
+            </ul>
+        </div>
+        <div class="right">
+            <img src="pictures/collections.png" alt="Arreglos y mapas" />
+        </div>
+        </div>
+    </div>
+    
+    <!-- Slide 17: Structs y Métodos -->
+    <div id="slide-17" class="slide">
+        <div class="slide-content">
+        <div class="left">
+            <h1 class="name">Structs y Métodos</h1>
+            <pre><code>type Persona struct {
+        Nombre string
+        Edad int
+    }</code></pre>
+            <pre><code>func (p Persona) Saludar() {
+        fmt.Println("Hola, soy", p.Nombre)
+    }</code></pre>
+        </div>
+        <div class="right">
+            <img src="pictures/structs.png" alt="Structs en Go" />
+        </div>
+        </div>
+    </div>
+    
+    <!-- Slide 18: Interfaces y Polimorfismo -->
+    <div id="slide-18" class="slide">
+        <div class="slide-content">
+        <div class="left">
+            <h1 class="name">Interfaces y Polimorfismo</h1>
+            <p>Las interfaces definen comportamientos:</p>
+            <pre><code>type Animal interface {
+        HacerSonido()
+    }</code></pre>
+            <p>Go implementa interfaces de manera implícita.</p>
+        </div>
+        <div class="right">
+            <img src="pictures/interfaces.png" alt="Interfaces en Go" />
+        </div>
+        </div>
+    </div>
+    
+    <!-- Slide 19: Manejo de Errores -->
+    <div id="slide-19" class="slide">
+        <div class="slide-content">
+        <div class="left">
+            <h1 class="name">Manejo de Errores</h1>
+            <ul>
+            <li>No hay try/catch</li>
+            <li>Se usa <code>error</code> como segundo valor</li>
+            <li><code>if err != nil</code> patrón común</li>
+            <li><code>panic</code> para errores fatales</li>
+            </ul>
+        </div>
+        <div class="right">
+            <img src="pictures/errors.png" alt="Errores en Go" />
+        </div>
+        </div>
+    </div>
+    
+    <!-- Slide 20: Concurrencia en Go -->
+    <div id="slide-20" class="slide">
+        <div class="slide-content">
+        <div class="left">
+            <h1 class="name">Concurrencia con Goroutines</h1>
+            <pre><code>go func() {
+        fmt.Println("Tarea concurrente")
+    }()</code></pre>
+            <p>Uso de canales (<code>chan</code>) para comunicación</p>
+        </div>
+        <div class="right">
+            <img src="pictures/goroutines.png" alt="Concurrencia" />
+        </div>
+        </div>
+    </div>
+    
+    <!-- Slide 21: Buenas Prácticas -->
+    <div id="slide-21" class="slide">
+        <div class="slide-content">
+        <div class="left">
+            <h1 class="name">Buenas Prácticas en Go</h1>
+            <ul>
+            <li>Usar <code>gofmt</code> para estilo de código</li>
+            <li>Manejar siempre errores</li>
+            <li>Evitar duplicación</li>
+            <li>Escribir tests con <code>testing</code></li>
+            </ul>
+        </div>
+        <div class="right">
+            <img src="pictures/buenas-practicas.png" alt="Buenas prácticas en Go" />
+        </div>
+        </div>
+    </div>
+    
+    <!-- Slide 22: Referencias -->
+    <div id="slide-22" class="slide">
+        <div class="slide-content">
+        <div class="left">
+            <h1 class="name">Referencias y Recursos</h1>
+            <ul class="description">
+            <li><a href="https://go.dev/doc">Documentación oficial de Go</a></li>
+            <li><a href="https://gobyexample.com">Go by Example</a></li>
+            <li><a href="https://go.dev/tour">Tour of Go</a></li>
+            <li>Libro: The Go Programming Language</li>
+            <li>Canales de Gopher Slack y GopherCon</li>
+            </ul>
+        </div>
+        <div class="right">
+            <img src="pictures/referencias.png" alt="Recursos" />
+        </div>
+        </div>
+    </div>
+
+  </div> <!-- /#slides -->
+
+  <!-- BARRA DE PROGRESO -->
+  <div id="progress">
+    <div id="progress-bar"></div>
+  </div>
+
+  <!-- CONTADOR -->
+  <div id="counter">1 / 2</div>
+
+  <!-- NAVEGACIÓN -->
+  <nav>
+    <button id="prevBtn">‹</button>
+    <button id="playPause">❚❚</button>
+    <button id="nextBtn">›</button>
+  </nav>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
