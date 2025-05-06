@@ -3,26 +3,23 @@
    ──────────────────────────────────────────────── */
    .slide {
     position: absolute;
-    top:    0;
-    left:   0;
-    width:  100%;
-    height: 100vh;
-    display:         flex;
-    align-items:     center;
+    inset: 0;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    padding:         0 5rem;
-    overflow:        hidden;
-    opacity:         0;
-    pointer-events:  none;
-    transition:      opacity 0.5s ease-in-out;
-    z-index:         0;
-  
-    /* ¡Aquí NO pongas fondo ni color! */
+    padding: 0 5rem;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    pointer-events: none;
+    z-index: 0;
   }
   
+  /* Slide visible: simple fade + lift */
   .slide.active {
-    opacity:        1;
+    opacity: 1;
+    transform: translateY(0);
     pointer-events: auto;
-    z-index:        1;
+    z-index: 1;
   }
-  

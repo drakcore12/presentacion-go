@@ -1,0 +1,75 @@
+/* SLIDE 22: RECURSOS Y REFERENCIAS */
+#slide-22 {
+    background: linear-gradient(90deg, #010f19 0%, #002e13 100%);
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 0;
+  }
+  
+  #slide-22.active {
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 1;
+  }
+  
+  #slide-22 .slide-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 4rem 5rem;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    text-align: left;
+  }
+  
+  #slide-22 .title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    padding: 0.25rem 1rem;
+    color: #ffffff;
+  }
+  
+  #slide-22 .info-box {
+    background-color: #00bcd4;
+    border: 4px solid #ffffff;
+    border-radius: 1rem;
+    padding: 2rem;
+    max-width: 800px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  #slide-22 .info-box ul {
+    margin: 0;
+    padding-left: 1.25rem;
+    list-style: disc inside;
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: 500;
+    color: #010f19;
+  }
+  
+  #slide-22 .info-box ul li {
+    margin-bottom: 0.5rem;
+    word-wrap: break-word;
+  }
+  
+  #slide-22 .logo {
+    position: absolute;
+    top: 2rem;
+    right: 5rem;
+    width: 150px;
+    height: auto;
+    display: block;
+  }

@@ -1,56 +1,80 @@
-/* Slide 8 específico */
+/* Slide 8 específico corregido */
 #slide-8 {
-    background: linear-gradient(90deg, #010f19 0%, #002e13 100%);
-    position: relative;
-    color: #ffffff;
-  }
-  
-  /* Contenido: título + gráfico */
-  #slide-8 .slide-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem 5rem;
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-  }
-  
-  /* Título */
-  #slide-8 .slide-content .title {
-    font-size: 2.2rem;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
-    color: #ffffff;
-  }
-  
-  /* Contenedor que limita el canvas */
-  #slide-8 .chart-container {
-    width: 100%;
-    max-width: 1200px;
-    height: 55vh;
-    margin: 0 auto;
-    padding: 1rem;
-    box-sizing: border-box;
-  }
-  
-  /* El canvas ocupa todo ese contenedor */
-  #salaryChart {
-    width: 100% !important;
-    height: 100% !important;
-    background: transparent;
-    border-radius: 1rem;
-  }
-  
-  /* Logo en la esquina superior derecha */
-  #slide-8 .right {
-    position: absolute;
-    top: 2rem;
-    right: 5rem;
-  }
-  #slide-8 .right .logo {
-    width: 150px;
-    height: auto;
-    display: block;
-  }
-  
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(90deg, #010f19 0%, #002e13 100%);
+  color: #ffffff;
+}
+
+#slide-8 .slide-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 50px 5rem 2rem;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#slide-8 .slide-content .title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  padding-top: 50px;
+}
+
+#slide-8 .chart-container {
+  width: 100%;
+  max-width: 1200px;
+  height: 55vh;
+  margin: 0 auto;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+#salaryChart {
+  width: 100% !important;
+  height: 100% !important;
+  background: transparent;
+  border-radius: 1rem;
+}
+
+#slide-8 .right {
+  position: absolute;
+  top: 2rem;
+  right: 5rem;
+}
+
+#slide-8 .right .logo {
+  width: 150px;
+  height: auto;
+  display: block;
+}
+
+/* Slide global continues... */
+.slide {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5rem;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Slide visible: simple fade + lift */
+.slide.active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+  z-index: 1;
+}

@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="pictures/favicon.ico" />
+
   <title>Presentación Go</title>
 
   <!-- 1) Global: reset y tipografía -->
@@ -323,6 +325,7 @@
         <div class="right">
             <img src="pictures/go-vs-otros.png" alt="Comparación de Go" />
         </div>
+        <img class="logo" src="https://go.dev/blog/go-brand/Go-Logo/PNG/Go-Logo_Aqua.png" alt="Logo de Go" />
         </div>
     </div>
     
@@ -346,6 +349,7 @@
         <div class="right">
             <img src="pictures/editor-console.png" alt="Editor y consola" />
         </div>
+        <img class="logo" src="https://go.dev/blog/go-brand/Go-Logo/PNG/Go-Logo_Aqua.png" alt="Logo de Go" />
         </div>
     </div>
     
@@ -380,6 +384,7 @@
         </div>
     
         <div class="right">
+            <img class="logo" src="https://go.dev/blog/go-brand/Go-Logo/PNG/Go-Logo_Aqua.png" alt="Logo de Go" />
             <img src="pictures/types-table.png" alt="Tabla de tipos" class="reduced-centered" />
         </div>
         </div>
@@ -409,190 +414,202 @@
     PI: 3.14</code></pre>
             </div>
         </div>
+        <img class="logo" src="https://go.dev/blog/go-brand/Go-Logo/PNG/Go-Logo_Aqua.png" alt="Logo de Go" />
         </div>
     </div>
-  
-  
+
     <!-- Slide 13: Funciones en Go -->
     <div id="slide-13" class="slide">
-        <div class="slide-content">
-        <div class="left">
-            <h1 class="name">Funciones en Go</h1>
-            <p>Ejemplo:</p>
-            <pre><code>func saludar(nombre string) string {
+      <div class="slide-content centered">
+        <h1 class="name">Funciones en Go</h1>
+        <p>Go permite definir funciones con retorno y parámetros:</p>
+        <div class="code-output-box">
+    <pre class="code-input"><code>func saludar(nombre string) string {
         return "Hola " + nombre
     }</code></pre>
-            <p>Admite múltiples retornos y funciones anónimas.</p>
+    <pre class="code-output"><code>Hola Miguel</code></pre>
         </div>
-        <div class="right">
-            <img src="pictures/functions.png" alt="Función en Go" />
-        </div>
-        </div>
+        <img class="logo" src="https://go.dev/blog/go-brand/Go-Logo/PNG/Go-Logo_Aqua.png" alt="Logo de Go" />
+      </div>
     </div>
-    
+
     <!-- Slide 14: Condicionales y Switch -->
     <div id="slide-14" class="slide">
-        <div class="slide-content">
-        <div class="left">
-            <h1 class="name">Condicionales y Switch</h1>
-            <ul>
-            <li><code>if</code>, <code>else</code>, <code>else if</code></li>
-            <li><code>switch</code> sin <code>break</code></li>
-            <li><code>defer</code>: ejecuta al final de la función</li>
-            </ul>
-            <pre><code>if edad >= 18 {
+      <div class="slide-content centered">
+        <h1 class="name">Condicionales y Switch</h1>
+        <p>Go tiene estructuras simples para control de flujo:</p>
+        <div class="code-output-box">
+    <pre class="code-input"><code>if edad >= 18 {
         fmt.Println("Mayor de edad")
     }</code></pre>
+    <pre class="code-output"><code>Mayor de edad</code></pre>
         </div>
-        <div class="right">
-            <img src="pictures/conditionals.png" alt="Condicionales" />
-        </div>
-        </div>
+        <img class="logo" src="https://go.dev/blog/go-brand/Go-Logo/PNG/Go-Logo_Aqua.png" alt="Logo de Go" />
+      </div>
     </div>
-    
+
     <!-- Slide 15: Bucles en Go -->
     <div id="slide-15" class="slide">
-        <div class="slide-content">
-        <div class="left">
-            <h1 class="name">Bucles en Go</h1>
-            <ul>
-            <li>Solo existe <code>for</code></li>
-            <li>For clásico, tipo while e infinito</li>
-            <li><code>for range</code> para iterar slices y mapas</li>
-            </ul>
-            <pre><code>for i := 0; i < 5; i++ {
+      <div class="slide-content centered">
+        <h1 class="name">Bucles en Go</h1>
+        <p>Go solo tiene <code>for</code>, pero es muy flexible:</p>
+        <div class="code-output-box">
+    <pre class="code-input"><code>for i := 0; i < 5; i++ {
         fmt.Println(i)
     }</code></pre>
+    <pre class="code-output"><code>0
+    1
+    2
+    3
+    4</code></pre>
         </div>
-        <div class="right">
-            <img src="pictures/loops.png" alt="Bucle for" />
-        </div>
-        </div>
+        <img class="logo" src="https://go.dev/blog/go-brand/Go-Logo/PNG/Go-Logo_Aqua.png" alt="Logo de Go" />
+      </div>
     </div>
-    
+
     <!-- Slide 16: Arreglos, Slices y Mapas -->
     <div id="slide-16" class="slide">
-        <div class="slide-content">
-        <div class="left">
-            <h1 class="name">Arreglos, Slices y Mapas</h1>
-            <ul>
-            <li>Array: <code>[5]int</code> — tamaño fijo</li>
-            <li>Slice: <code>[]int</code> — dinámico</li>
-            <li>Mapa: <code>map[string]int</code> — clave-valor</li>
-            </ul>
+      <div class="slide-content centered">
+        <h1 class="name">Arreglos, Slices y Mapas</h1>
+        <p>Estructuras comunes en Go:</p>
+        <div class="code-output-box">
+    <pre class="code-input"><code>var arr [3]int = [3]int{1, 2, 3}
+    slice := []int{4, 5, 6}
+    mapa := map[string]int{"edad": 20}</code></pre>
+    <pre class="code-output"><code>[1 2 3]
+    [4 5 6]
+    map[edad:20]</code></pre>
         </div>
-        <div class="right">
-            <img src="pictures/collections.png" alt="Arreglos y mapas" />
-        </div>
-        </div>
+        <img class="logo" src="https://go.dev/blog/go-brand/Go-Logo/PNG/Go-Logo_Aqua.png" alt="Logo de Go" />
+      </div>
     </div>
-    
+
     <!-- Slide 17: Structs y Métodos -->
     <div id="slide-17" class="slide">
-        <div class="slide-content">
-        <div class="left">
-            <h1 class="name">Structs y Métodos</h1>
-            <pre><code>type Persona struct {
+      <div class="slide-content centered">
+        <h1 class="name">Structs y Métodos</h1>
+        <p>Go permite crear tipos personalizados y asociarles métodos:</p>
+        <div class="code-output-box">
+    <pre class="code-input"><code>type Persona struct {
         Nombre string
-        Edad int
-    }</code></pre>
-            <pre><code>func (p Persona) Saludar() {
+        Edad   int
+    }
+
+    func (p Persona) Saludar() {
         fmt.Println("Hola, soy", p.Nombre)
     }</code></pre>
+    <pre class="code-output"><code>Hola, soy Miguel</code></pre>
         </div>
-        <div class="right">
-            <img src="pictures/structs.png" alt="Structs en Go" />
-        </div>
-        </div>
+        <img class="logo" src="https://go.dev/blog/go-brand/Go-Logo/PNG/Go-Logo_Aqua.png" alt="Logo de Go" />
+      </div>
     </div>
-    
+
     <!-- Slide 18: Interfaces y Polimorfismo -->
     <div id="slide-18" class="slide">
-        <div class="slide-content">
-        <div class="left">
-            <h1 class="name">Interfaces y Polimorfismo</h1>
-            <p>Las interfaces definen comportamientos:</p>
-            <pre><code>type Animal interface {
+      <div class="slide-content centered">
+        <h1 class="name">Interfaces y Polimorfismo</h1>
+        <p>Go usa interfaces implícitamente para definir comportamientos:</p>
+
+        <div class="code-output-box">
+          <!-- Entrada -->
+          <pre class="code-input"><code>type Animal interface {
         HacerSonido()
+    }
+
+    type Perro struct{}
+
+    func (p Perro) HacerSonido() {
+        fmt.Println("Guau")
+    }
+
+    func main() {
+        var a Animal = Perro{}
+        a.HacerSonido()
     }</code></pre>
-            <p>Go implementa interfaces de manera implícita.</p>
+
+          <!-- Salida -->
+          <pre class="code-output"><code>Guau</code></pre>
         </div>
-        <div class="right">
-            <img src="pictures/interfaces.png" alt="Interfaces en Go" />
-        </div>
-        </div>
+
+        <img class="logo" src="https://go.dev/blog/go-brand/Go-Logo/PNG/Go-Logo_Aqua.png" alt="Logo de Go" />
+      </div>
     </div>
-    
+
+
     <!-- Slide 19: Manejo de Errores -->
     <div id="slide-19" class="slide">
-        <div class="slide-content">
-        <div class="left">
-            <h1 class="name">Manejo de Errores</h1>
-            <ul>
-            <li>No hay try/catch</li>
-            <li>Se usa <code>error</code> como segundo valor</li>
-            <li><code>if err != nil</code> patrón común</li>
-            <li><code>panic</code> para errores fatales</li>
-            </ul>
+      <div class="slide-content centered">
+        <h1 class="name">Manejo de Errores</h1>
+        <p>Go evita excepciones. Usa valores <code>error</code>:</p>
+        <div class="code-output-box">
+    <pre class="code-input"><code>res, err := dividir(10, 0)
+    if err != nil {
+        fmt.Println("Error:", err)
+    }</code></pre>
+    <pre class="code-output"><code>Error: división por cero</code></pre>
         </div>
-        <div class="right">
-            <img src="pictures/errors.png" alt="Errores en Go" />
-        </div>
-        </div>
+        <img class="logo" src="https://go.dev/blog/go-brand/Go-Logo/PNG/Go-Logo_Aqua.png" alt="Logo de Go" />
+
+      </div>
     </div>
-    
-    <!-- Slide 20: Concurrencia en Go -->
+
+    <!-- Slide 20: Concurrencia con Goroutines -->
     <div id="slide-20" class="slide">
-        <div class="slide-content">
-        <div class="left">
-            <h1 class="name">Concurrencia con Goroutines</h1>
-            <pre><code>go func() {
+      <div class="slide-content centered">
+        <h1 class="name">Concurrencia con Goroutines</h1>
+        <p>Go permite lanzar tareas concurrentes con <code>go</code>:</p>
+        <div class="code-output-box">
+    <pre class="code-input"><code>go func() {
         fmt.Println("Tarea concurrente")
     }()</code></pre>
-            <p>Uso de canales (<code>chan</code>) para comunicación</p>
+    <pre class="code-output"><code>Tarea concurrente</code></pre>
         </div>
-        <div class="right">
-            <img src="pictures/goroutines.png" alt="Concurrencia" />
-        </div>
-        </div>
+        <img class="logo" src="https://go.dev/blog/go-brand/Go-Logo/PNG/Go-Logo_Aqua.png" alt="Logo de Go" />
+
+      </div>
     </div>
+
     
     <!-- Slide 21: Buenas Prácticas -->
     <div id="slide-21" class="slide">
-        <div class="slide-content">
+      <div class="slide-content">
         <div class="left">
-            <h1 class="name">Buenas Prácticas en Go</h1>
-            <ul>
+          <h1 class="name">Buenas Prácticas en Go</h1>
+          <ul class="description">
             <li>Usar <code>gofmt</code> para estilo de código</li>
             <li>Manejar siempre errores</li>
             <li>Evitar duplicación</li>
             <li>Escribir tests con <code>testing</code></li>
-            </ul>
+          </ul>
         </div>
         <div class="right">
-            <img src="pictures/buenas-practicas.png" alt="Buenas prácticas en Go" />
+          <img src="pictures/buenas-practicas.png" alt="Buenas prácticas en Go" class="buenas-practicas-img" />
         </div>
-        </div>
+      </div>
     </div>
     
-    <!-- Slide 22: Referencias -->
+    <!-- Slide 22: Recursos y Referencias -->
     <div id="slide-22" class="slide">
-        <div class="slide-content">
-        <div class="left">
-            <h1 class="name">Referencias y Recursos</h1>
-            <ul class="description">
-            <li><a href="https://go.dev/doc">Documentación oficial de Go</a></li>
-            <li><a href="https://gobyexample.com">Go by Example</a></li>
-            <li><a href="https://go.dev/tour">Tour of Go</a></li>
-            <li>Libro: The Go Programming Language</li>
-            <li>Canales de Gopher Slack y GopherCon</li>
-            </ul>
+      <div class="slide-content">
+        <h1 class="title">Recursos y Referencias</h1>
+
+        <div class="info-box">
+          <ul>
+            <li>📘 <a href="https://go.dev/doc/" target="_blank">Documentación oficial de Go</a></li>
+            <li>📖 <a href="https://gobyexample.com/" target="_blank">Go by Example</a> – Ejemplos prácticos</li>
+            <li>🎥 <a href="https://www.youtube.com/@AprendeGo" target="_blank">Canales de YouTube</a>: Aprendiendo Go en español</li>
+            <li>📚 <a href="https://tour.golang.org/" target="_blank">Tour of Go</a> – Curso interactivo oficial</li>
+            <li>🔧 <a href="https://pkg.go.dev/" target="_blank">Go Packages</a> – Repositorio de librerías</li>
+            <li>🧪 <a href="https://go.dev/doc/tutorial/add-a-test" target="_blank">Testing en Go</a></li>
+            <li>🌐 Stack Overflow, GitHub, Reddit (<code>r/golang</code>)</li>
+            <li>📈 Datos de salarios: <a href="https://stackoverflow.blog/2023/06/28/developer-survey-2023/" target="_blank">Stack Overflow Developer Survey</a>, Glassdoor y Levels.fyi</li>
+          </ul>
         </div>
-        <div class="right">
-            <img src="pictures/referencias.png" alt="Recursos" />
-        </div>
-        </div>
+
+        <img class="logo" src="https://go.dev/blog/go-brand/Go-Logo/PNG/Go-Logo_Aqua.png" alt="Logo de Go" />
+      </div>
     </div>
+
 
   </div> <!-- /#slides -->
 
@@ -602,7 +619,7 @@
   </div>
 
   <!-- CONTADOR -->
-  <div id="counter">1 / 2</div>
+  <div id="counter">1 / 22</div>
 
   <!-- NAVEGACIÓN -->
   <nav>

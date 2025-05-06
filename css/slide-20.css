@@ -1,0 +1,95 @@
+/* SLIDE 20: CONCURRENCIA CON GOROUTINES */
+#slide-20 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5rem;
+    background-color: #010f19;
+    color: #ffffff;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 0;
+  }
+  
+  #slide-20.active {
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 1;
+  }
+  
+  #slide-20 .slide-content.centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  
+  #slide-20 h1.name {
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    margin-bottom: 1rem;
+    color: #ffffff;
+  }
+  
+  #slide-20 p {
+    font-size: 1rem;
+    margin: 0.5rem 0 1rem;
+    color: #dddddd;
+  }
+  
+  #slide-20 .code-output-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1400px;
+    margin-top: 1rem;
+  }
+  
+  #slide-20 .code-input,
+  #slide-20 .code-output {
+    flex: 1;
+    height: 320px;
+    padding: 1rem 0.5rem 1rem 0.25rem;
+    border-radius: 8px;
+    overflow: auto;
+    font-family: 'Courier New', monospace;
+    font-size: 0.7rem;
+    box-sizing: border-box;
+    white-space: pre;
+    text-align: left;
+    tab-size: 4;
+  }
+  
+  #slide-20 .code-input {
+    background-color: #0e1a24;
+    color: #00e0ff;
+  }
+  
+  #slide-20 .code-output {
+    background-color: #2c2c2c;
+    color: #ffffff;
+  }
+  
+  #slide-20 .logo {
+    position: absolute;
+    top: 2rem;
+    right: 5rem;
+    width: 150px;
+    height: auto;
+    display: block;
+    z-index: 10;
+  }

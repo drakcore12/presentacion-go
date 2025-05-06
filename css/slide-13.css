@@ -1,97 +1,95 @@
-  /* Slide 3 específico */
-  #slide-3 {
-    background: linear-gradient(90deg, #010f19 0%, #002e13 100%);
-    color: #ffffff;
-    position: absolute; /* para el logo absoluto */
-  }
-  
-  /* Contenido en columna y centrado */
-  #slide-3 .slide-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 2rem;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  
-  /* Título */
-  #slide-3 .left .name {
-    font-size: 2.5rem;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    margin: 0;
-    color: #ffffff;
-  }
-  
-  /* Cita */
-  #slide-3 .left .intro-quote {
-    font-style: italic;
-    font-weight: 500;
-    margin: 0;
-    color: #cfdcdd;
-  }
-  
-  /* Grid de tarjetas */
-  #slide-3 .reasons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-    width: 100%;
-    max-width: 1200px;
-    box-sizing: border-box;
-    margin: 0 auto;
-  }
-  
-  /* Tarjeta individual */
-  #slide-3 .card {
-    background-color: #00bcd4;
-    color: #010f19;
-    border: 3px solid #ffffff;
-    border-radius: 0.5rem;
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  
-  /* Título de tarjeta */
-  #slide-3 .card-title {
-    font-size: 1.1rem;
-    font-weight: 700;
-    margin-bottom: 0.75rem;
-  }
-  
-  /* Texto de tarjeta */
-  #slide-3 .card-text {
-    font-size: 0.95rem;
-    line-height: 1.4;
-    margin-bottom: 1rem;
-  }
-  
-  /* Iconos y diagramas: aún más grandes */
-  #slide-3 .card-icons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.75rem;
-    justify-content: center;
-  }
-  #slide-3 .card-icons img {
-    max-width: 120px;
-    max-height: 120px;
-    object-fit: contain;
-  }
-  
-  /* Logo Go en esquina, agrandado */
-  #slide-3 .right {
-    position: absolute;
-    top: 2rem;
-    right: 5rem;
-  }
-  #slide-3 .right .logo {
-    width: 150px;
-    height: auto;
-  }
-  
+/* SLIDE 13: FUNCIONES EN GO */
+#slide-13 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5rem;
+  background-color: #010f19;
+  color: #ffffff;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 0;
+}
+
+#slide-13.active {
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 1;
+}
+
+#slide-13 .slide-content.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+#slide-13 h1.name {
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+#slide-13 p {
+  font-size: 1rem;
+  margin: 0.5rem 0 1rem;
+  color: #dddddd;
+}
+
+#slide-13 .code-output-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1400px;
+  margin-top: 1rem;
+}
+
+#slide-13 .code-input,
+#slide-13 .code-output {
+  flex: 1;
+  height: 320px;
+  padding: 1rem 0.5rem 1rem 0.25rem;
+  border-radius: 8px;
+  overflow: auto;
+  font-family: 'Courier New', monospace;
+  font-size: 0.7rem;
+  box-sizing: border-box;
+  white-space: pre;
+  text-align: left;
+  tab-size: 4;
+}
+
+#slide-13 .code-input {
+  background-color: #0e1a24;
+  color: #00e0ff;
+}
+
+#slide-13 .code-output {
+  background-color: #2c2c2c;
+  color: #ffffff;
+}
+
+#slide-13 .logo {
+  position: absolute;
+  top: 2rem;
+  right: 5rem;
+  width: 150px;
+  height: auto;
+  display: block;
+  z-index: 10;
+}
